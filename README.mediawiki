@@ -23,11 +23,11 @@ And put '''target/devcrowd-aws-demo-1.0-SNAPSHOT.war''' in ''''${JBOSS_HOME}/sta
 
 === JMS & Hibernate version ===
 
-Run the server with
+Run the server with:
 
  ./standalone.sh -Dlocal --server-config=standalone-full.xml
 
-Deploy JMS queue with
+Deploy JMS queue with the admin console:
 
  jms-queue add --queue-address=DevcrowdQueue --entries=queues/MessageQueue
 
