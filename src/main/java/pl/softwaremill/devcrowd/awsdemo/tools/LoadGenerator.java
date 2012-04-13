@@ -42,12 +42,6 @@ public class LoadGenerator {
             HttpResponse response = client.execute(get);
 
             EntityUtils.consume(response.getEntity());
-
-            try {
-                Thread.sleep(250);
-            } catch (InterruptedException e) {
-                //
-            }
         }
     }
 }
