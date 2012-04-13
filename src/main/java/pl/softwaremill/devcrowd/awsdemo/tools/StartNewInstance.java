@@ -35,7 +35,7 @@ public class StartNewInstance {
     }
 
     public List<String> startInstance(Jec2 ec2) throws EC2Exception {
-        LaunchConfiguration launchConfiguration = new LaunchConfiguration("ami-75300901");
+        LaunchConfiguration launchConfiguration = new LaunchConfiguration("ami-0b675c7f");
         launchConfiguration.setSecurityGroup(Arrays.asList("quicklaunch-1"));
         launchConfiguration.setKeyName("devcrowd");
         launchConfiguration.setAvailabilityZone("eu-west-1c");
