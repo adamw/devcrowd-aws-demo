@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.softwaremill.jozijug</groupId>
-    <artifactId>jozi-aws-demo</artifactId>
+    <artifactId>devcrowd-aws-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>jozi-aws-demo</name>
+    <name>devcrowd-aws-demo</name>
     <url>http://asamal.org</url>
     <packaging>war</packaging>
 
@@ -148,7 +148,7 @@
                             <arguments>
                                 <argument>-classpath</argument>
                                 <classpath/>
-                                <argument>pl.softwaremill.jozijug.joziawsdemo.tools.LoadGenerator</argument>
+                                <argument>pl.softwaremill.devcrowd.awsdemo.tools.LoadGenerator</argument>
                             </arguments>
                         </configuration>
                     </plugin>

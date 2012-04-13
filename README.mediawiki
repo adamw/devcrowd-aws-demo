@@ -1,6 +1,7 @@
-= Jozi JUG AWS sample application =
+= DevCrowd 2012 AWS sample application =
 
 == Setup JBoss ==
+
 Start JBoss AS 7.1+
 
 Fix the slf4j module, by editing ${JBOSS_HOME}/modules/org/jboss/logging/main/module.xml and add those two to the dependencies:
@@ -16,7 +17,7 @@ Build the project with
 
  mvn clean install
 
-And put '''target/jozi-aws-demo-1-SNAPSHOT.war''' in ''''${JBOSS_HOME}/standalone/deployments'''
+And put '''target/devcrowd-aws-demo-1.0-SNAPSHOT.war''' in ''''${JBOSS_HOME}/standalone/deployments'''
 
 == Run the application ==
 
@@ -28,7 +29,7 @@ Run the server with
 
 Deploy JMS queue with
 
- add-jms-queue --name=JoziJUGQueue --entries=queues/MessageQueue
+ jms-queue add --queue-address=DevcrowdQueue --entries=queues/MessageQueue
 
 This will use JPA/JMS services.
 
@@ -44,4 +45,8 @@ Run the server with
 
 == Access the application ==
 
-Go to [http://localhost:8080/jozi-aws-demo-1-SNAPSHOT/home/index http://localhost:8080/jozi-aws-demo-1-SNAPSHOT/home/index]
+Go to [http://localhost:8080/decrowd-aws-demo-1.0-SNAPSHOT/home/index http://localhost:8080/devcrowd-aws-demo-1.0-SNAPSHOT/home/index]
+
+== Load generator ==
+
+To run the load generator, execute: mvn -Plg exec:exec
