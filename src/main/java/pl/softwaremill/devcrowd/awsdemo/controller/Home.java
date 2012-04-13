@@ -31,7 +31,6 @@ public class Home extends ControllerBean implements Serializable {
     public void index() {
 
         List<Message> messages = messagesLister.listRecentMessages("room");
-        System.out.println("messages = " + messages);
 
         putInContext("messages", messages);
     }
@@ -63,7 +62,6 @@ public class Home extends ControllerBean implements Serializable {
     @Post
     public void reloadMessages() {
         List<Message> messages = messagesLister.listRecentMessages("room");
-        System.out.println("messages = " + messages);
 
         putInContext("messages", messages);
     }

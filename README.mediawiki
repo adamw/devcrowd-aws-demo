@@ -9,7 +9,7 @@ Fix the slf4j module, by editing ${JBOSS_HOME}/modules/org/jboss/logging/main/mo
     <module name="org.apache.log4j"/>
     <module name="org.slf4j"/>
 
-'' This might be fixed by JBoss one day, but still for JBoss AS 7.1-Final does not work properly''
+''This might be fixed by JBoss one day, but still for JBoss AS 7.1-Final does not work properly''
 
 == Build & Deploy the war ==
 
@@ -45,7 +45,7 @@ Run the server with
 
 == Access the application ==
 
-Go to [http://localhost:8080/decrowd-aws-demo-1.0-SNAPSHOT/home/index http://localhost:8080/devcrowd-aws-demo-1.0-SNAPSHOT/home/index]
+Go to [http://localhost:8080/devcrowd-aws-demo-1.0-SNAPSHOT/home/index http://localhost:8080/devcrowd-aws-demo-1.0-SNAPSHOT/home/index]
 
 == Load generator ==
 
