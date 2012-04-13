@@ -43,7 +43,7 @@ public class QueueListener implements Runnable {
 
                     //Simulate message processing
                     try {
-                        Thread.sleep(2000);
+                        Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         //
                     }

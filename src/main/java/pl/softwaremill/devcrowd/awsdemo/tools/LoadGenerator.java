@@ -44,7 +44,7 @@ public class LoadGenerator {
             EntityUtils.consume(response.getEntity());
 
             try {
-                Thread.sleep(500);
+                Thread.sleep(250);
             } catch (InterruptedException e) {
                 //
             }
